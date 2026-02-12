@@ -1,0 +1,10 @@
+name: neyuantispam
+version: '1.0-SNAPSHOT'
+main: me.neyucity.project.neyuantispam.Neyuantispam
+api-version: '1.20'
+description: Advanced AntiSpam plugin by neyucity.com
+commands:
+  neyuantispam:
+    description: Main command
+    permission: neyuantispam.admin
+    usage: /<command> [reload|clear] [player]

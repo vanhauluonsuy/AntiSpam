@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="neyuantispam">
+    <output-path>$PROJECT_DIR$/out/artifacts/neyuantispam</output-path>
+    <root id="archive" name="neyuantispam.jar">
+      <element id="module-output" name="neyuantispam" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,39 @@
+# Chống gửi tin nhắn tương tự/trùng lặp
+block-repeated-messages: true
+similarity-threshold: 0.8 # 80% giống nhau sẽ bị chặn
+
+# Cooldown giữa các lần chat (giây)
+delay: 3
+
+# Chặn lặp lại ký tự (vd: hế lốốốố)
+block-repeated-characters: true
+max-repeating-characters: 3
+
+# Chặn Caps Lock
+block-caps: true
+max-caps-percentage: 0.6
+min-length-caps: 5
+
+# Danh sách từ cấm
+blocked-words:
+  - "badword1"
+  - "badword2"
+
+# Hệ thống phạt tăng dần (Mute)
+punishment:
+  enabled: true
+  levels:
+    1: "mute %player% 1h Spam lần 1"
+    2: "mute %player% 2h Spam lần 2"
+    3: "mute %player% 3h Spam lần 3"
+    4: "kick %player% &cTái phạm spam quá nhiều"
+
+messages:
+  no-permission: "§cBạn không có quyền!"
+  reload-success: "§aPlugin đã được reload!"
+  spam-cooldown: "§cVui lòng đợi %seconds%s để chat tiếp!"
+  spam-repeated: "§cTin nhắn quá giống tin nhắn trước đó!"
+  spam-characters: "§cQuá nhiều ký tự lặp lại!"
+  spam-caps: "§cĐừng viết hoa quá nhiều!"
+  spam-blocked-word: "§cTin nhắn chứa từ ngữ bị cấm!"
+  punished: "§cBạn đã bị phạt vì vi phạm chat %count% lần!"
